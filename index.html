@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <nav id="header" class="navbar">
+        <a class="navbar-text" href="#">Sentiment Analysis Visualization</a>
+    </nav>
+
+    <div id="inputsection" class="section">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-text">Enter your text</span>
+                <textarea id="textInput" class="form-control" aria-label="Enter your text"></textarea>
+                <br>
+            </div>
+            <div class="col-md-12 text-center">
+                <button id ="sentButton" type="button" class="btn btn-primary btn-lg" onclick="getResp();">Analyze</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="outputsection">
+        <div class="container">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div id="viz"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
