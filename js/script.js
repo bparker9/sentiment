@@ -14,7 +14,7 @@ function plotSentiment(posSent, negSent, neutSent, mixedSent) {
 const getResp = function() {
     var requestData = document.getElementById("textInput").value;
     console.log(requestData);
-    fetch('https://c24ge3u77j.execute-api.us-east-1.amazonaws.com/prod/helloworld',{
+    fetch(/* API URL */,{
         method: 'POST',
         body: JSON.stringify
         ({text: requestData}),
